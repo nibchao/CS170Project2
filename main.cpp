@@ -7,15 +7,29 @@
 using namespace std;
 
 int crossValidation(ifstream&, vector<int>, int);
-double nearestNeighbor(int, ifstream&);
+double nearestNeighbor(vector<vector<double>>);
 void searchAlgorithm(int);
 
 const int TEMP_DATA_LIMIT_CONST = 495; // temp line for testing
+
+struct datasetPoint
+{
+	int dataClass;
+	vector<double> dataFeatures;
+};
 
 int main()
 {
 	string fileName = "";
 	int algorithmInput = 0;
+
+	int row = 0; int column = 0;
+	int dataClass = 0; double a = 0;
+	string line = "";
+
+	vector<datasetPoint> dataVector;
+	datasetPoint dataInEachLine;
+
 	/*cout << "Welcome to Nicholas's Feature Selection Algorithm.\n";
 	cout << "Type in the name of file to test : ";
 	cin >> fileName;
@@ -23,74 +37,52 @@ int main()
 	cout << "1) Forward Selection\n";
 	cout << "2) Backward Elimination\n";
 	cin >> algorithmInput;
-
 	ifstream dataFile(fileName);*/
 	ifstream dataFile("CS170_Small_Data__103.txt"); // temp line for testing
-	vector<double> dataInEachLine;
-	vector<vector<double>> dataVector;
-	int fileSize = 0;
-	int row = 0; int column = 0;
-	double a = 0;
-	string line = "";
+	
 	while (getline(dataFile, line))
 	{
-		stringstream lineStream(line);
-		stringstream lineStream2(line);
 		row++;
-		dataInEachLine.clear();
-		while (lineStream2 >> a) // stores numbers from each line into dataInEachLine vector
-		{
-			dataInEachLine.push_back(a);
-		}
-		dataVector.push_back(dataInEachLine); // pushes the dataInEachLine vector into dataVector to ultimately store entire dataset; [i][0] = class, [i][j] = features
 		if (row == 1) // counts number of columns (features) in dataset
 		{
-			stringstream lineStream(line);
-			while (lineStream >> a)
+			stringstream numberOfColumns(line);
+			while (numberOfColumns >> a)
 			{
 				column++;
 			}
 		}
-		while (lineStream >> a) // counts number of lines (instances) in dataset
+		stringstream storeDataClass(line);
+		while (storeDataClass >> dataClass) // stores class into dataInEachLine dataClass field
 		{
-			fileSize++;
-			break;
+			dataInEachLine.dataClass = dataClass;
+			stringstream storeDataFeatures(line);
+			while (storeDataFeatures >> a) // stores feature numbers into dataInEachLine dataFeatures vector
+			{
+				dataInEachLine.dataFeatures.push_back(a);
+			}
+			dataVector.push_back(dataInEachLine); // stores the line as type datasetPoint into dataVector
+			dataInEachLine.dataFeatures.clear();
 		}
 	}
-	dataFile.clear();
-	dataFile.seekg(0, dataFile.beg);
-	//for (int i = 0; i < fileSize; i++) // rows
-	//{
-	//	for (int j = 0; j < column; j++) // columns
-	//	{
-	//		cout << i + 1 << " " << dataVector[i][j] << " ";
-	//	}
-	//	cout << "\n";
-	//}
-	//cout << "\nThis dataset has " << column - 1 << " features (not including the class attribute), with " << fileSize << " instances.\n";
+	column--;
+	//cout << "\nThis dataset has " << column << " features (not including the class attribute), with " << dataVector.size() << " instances.\n";
 	searchAlgorithm(algorithmInput);
-	//nearestNeighbor(fileSize, dataFile);
+	//nearestNeighbor(dataVector);
 	return 0;
 }
 
-double nearestNeighbor(int fileSize, ifstream& dataFile)
+double nearestNeighbor(vector<vector<double>> dataVector)
 {
 	vector<int> currentSetOfFeatures;
 	int numberCorrectlyClassified = 0;
 
-	for (int i = 1; i <= fileSize - TEMP_DATA_LIMIT_CONST; i++)
+	for (int i = 1; i <= dataVector.size() - TEMP_DATA_LIMIT_CONST; i++)
 	{
-		string objectToClassify = ""; // entire line
-		double labelObjectToClassify = 0; // first column
+		double labelObjectToClassify = dataVector[i][0];
 		double nearestNeighborDistance = INT_MAX;
 		double nearestNeighborLocation = INT_MAX;
 		double nearestNeighborLabel = 0;
-
-		getline(dataFile, objectToClassify);
-		stringstream lineStream(objectToClassify);
-		lineStream >> labelObjectToClassify;
-
-		for (int k = 1; k <= fileSize - TEMP_DATA_LIMIT_CONST; k++)
+		for (int k = 1; k <= dataVector.size() - TEMP_DATA_LIMIT_CONST; k++)
 		{
 			if (i != k)
 			{			
@@ -99,7 +91,7 @@ double nearestNeighbor(int fileSize, ifstream& dataFile)
 				{
 					nearestNeighborDistance = distance;
 					nearestNeighborLocation = k;
-					nearestNeighborLabel = nearestNeighborLocation; // this is supposed to refer to first column class label for this specified nearest neighbor or data(nearestNeighborLocation,1)
+					nearestNeighborLabel = dataVector[nearestNeighborLocation][0]; // this is supposed to refer to first column class label for this specified nearest neighbor or data(nearestNeighborLocation,1)
 				}
 			}
 		}
@@ -110,7 +102,7 @@ double nearestNeighbor(int fileSize, ifstream& dataFile)
 		cout << "Object " << i << " is class " << labelObjectToClassify << "\n";
 		cout << "Its nearest_neighbor is " << nearestNeighborLocation << " which is in class " << labelObjectToClassify << "\n\n";
 	}
-	return (numberCorrectlyClassified / fileSize);
+	return numberCorrectlyClassified / dataVector.size();
 }
 
 void searchtemp()
