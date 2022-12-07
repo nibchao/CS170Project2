@@ -193,7 +193,14 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                     continue;
                 }
                 temp = currentSetOfFeatures; temp.erase(find(temp.begin(), temp.end(), k));
-                accuracy = nearestNeighbor(dataVector, temp, instances);
+                if (temp.empty())
+                {
+                    accuracy = 50;
+                }
+                else
+                {
+                    accuracy = nearestNeighbor(dataVector, temp, instances);
+                }  
                 cout << "Using feature(s) "; printFeatures(temp); cout << "accuracy is " << accuracy << "%\n";
                 if (accuracy > bestSoFarAccuracy)
                 {
