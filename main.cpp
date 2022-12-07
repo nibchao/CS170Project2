@@ -21,45 +21,29 @@ double calculateDistance(datasetPoint, datasetPoint, vector<int>);
 void printFeatures(vector<int>);
 //
 
+/*
+* referenced https://stackoverflow.com/questions/40286788/keep-track-of-time-in-a-game-loop-in-c to keep track of how long it takes to run the program
+*/
 int main()
 {
     string fileName = "";
     int algorithmInput = 0;
-
     int row = 0; int column = -1;
     double a = 0;
     int instances = 0;
     string line = "";
-
     vector<datasetPoint> dataVector; // vector of datasetPoint struct to store the entire .txt file
     datasetPoint dataInEachLine; // used as a way to push each line into dataVector
-
-    auto start_time = chrono::high_resolution_clock::now();
-    
-
-    /*cout << "Welcome to Nicholas's Feature Selection Algorithm.\n";
+  
+    cout << "Welcome to Nicholas's Feature Selection Algorithm.\n";
     cout << "Type in the name of file to test : ";
     cin >> fileName;
     cout << "\nType the number of the algorithm you want to run.\n";
     cout << "1) Forward Selection\n";
     cout << "2) Backward Elimination\n";
     cin >> algorithmInput;
-    ifstream dataFile(fileName);*/
-
-    ifstream dataFile("CS170_Small_Data__103.txt"); // my small data
-    //ifstream dataFile("CS170_Large_Data__74.txt"); // my large data
-    
-    // Sue
-    //ifstream dataFile("sueCS170_Small_Data__96.txt"); // On small dataset 96 the error rate can be 0.94 when using only features 1 3 6;
-    //ifstream dataFile("sueCS170_Large_Data__21.txt"); // On large dataset 21 the error rate can be 0.947 when using only features 37 36 40
-
-    // Joe
-    //ifstream dataFile("joeCS170_Small_Data__6.txt"); // On small dataset 6 the error rate can be 0.916 when using only features 2 5 3; 
-    //ifstream dataFile("joeCS170_Large_Data__96.txt"); // On large dataset 96 the error rate can be 0.947 when using only features 21 8 10
-    
-    // Van
-    //ifstream dataFile("vanCS170_Small_Data__88.txt"); // van data On small dataset 88 the error rate can be 0.936 when using only features 5 2 1; 
-    //ifstream dataFile("vanCS170_Large_Data__6.txt"); // On large dataset 6 the error rate can be 0.954 when using only features 22 1 6
+    auto start_time = chrono::high_resolution_clock::now();
+    ifstream dataFile(fileName);
 
     while (getline(dataFile, line))
     {
@@ -67,15 +51,15 @@ int main()
         if (row == 1)
         {
             stringstream numberOfColumns(line);
-            while (numberOfColumns >> a)
+            while (numberOfColumns >> a) // counts number of columns (features) in the dataset
             {
                 column++;
             }
         }
         stringstream storeDataClass(line);
-        storeDataClass >> a;
+        storeDataClass >> a; // gets the class (first value of line) and stores into dataClass field
         dataInEachLine.dataClass = a;
-        while (storeDataClass >> a)
+        while (storeDataClass >> a) // stores the number for each feature (remaining values in line)
         {
             dataInEachLine.dataFeatures.push_back(a);
         }
@@ -92,35 +76,34 @@ int main()
     double accuracy = nearestNeighbor(dataVector, currentSetOfFeatures, instances);
     cout << "Running nearest neighbor with all " << column << " features, using 'leaving-one-out' evaluation, I get an accuracy of " << accuracy << "%\n\n";
     cout << "Beginning search.\n\n";
-    //searchAlgorithm(algorithmInput, dataVector, instances, accuracy);
-    
-    //searchAlgorithm(1, dataVector, instances, accuracy);
-    searchAlgorithm(2, dataVector, instances, accuracy);
+    searchAlgorithm(algorithmInput, dataVector, instances, accuracy);
 
     auto current_time = chrono::high_resolution_clock::now();
     cout << "\nProgram has been running for " << chrono::duration_cast<chrono::seconds>(current_time - start_time).count() << " seconds";
     return 0;
 }
 
+/*
+* referenced slides 57-63 in project 2 briefing slides
+* 
+* calculates the accuracy of nearest neighbor classification algorithm using the dataset
+*/
 double nearestNeighbor(vector<datasetPoint> dataVector, vector<int> currentSetOfFeatures, int instances)
 {
     double numberCorrectlyClassified = 0;
     for (int i = 0; i < dataVector.size(); i++)
     {
-        datasetPoint objectToClassify = dataVector.at(i); // refers to an entire line (object) in dataVector
-        //int labelObjectToClassify = dataVector.at(i).dataClass;
+        datasetPoint objectToClassify = dataVector.at(i); // refers to an entire line in dataVector
         double nearestNeighborDistance = INT_MAX;
-        //double nearestNeighborLocation = INT_MAX;
         int nearestNeighborLabel = -1;
         for (int k = 0; k < i; k++)
         {
-            if (i != k)
+            if (i != k) // checks for comparing feature to itself
             {
                 double distance = calculateDistance(objectToClassify, dataVector.at(k), currentSetOfFeatures);
                 if (distance < nearestNeighborDistance)
                 {
                     nearestNeighborDistance = distance;
-                    //nearestNeighborLocation = k;
                     nearestNeighborLabel = dataVector.at(k).dataClass;
                 }
             }
@@ -129,12 +112,13 @@ double nearestNeighbor(vector<datasetPoint> dataVector, vector<int> currentSetOf
         {
             numberCorrectlyClassified++;
         }
-        //cout << "Object " << i << " is class " << labelObjectToClassify << "\n";
-        //cout << "Its nearest_neighbor is " << nearestNeighborLocation << " which is in class " << nearestNeighborLabel << "\n\n";
     }
     return numberCorrectlyClassified / instances * 100;
 }
 
+/*
+* calculates the euclidean distance from one data point to another data point
+*/
 double calculateDistance(datasetPoint line, datasetPoint line2, vector<int> currentSetOfFeatures)
 {
     double distance = 0;
@@ -145,6 +129,13 @@ double calculateDistance(datasetPoint line, datasetPoint line2, vector<int> curr
     return pow(distance, 0.5);
 }
 
+/*
+* referenced https://stackoverflow.com/a/3450906 to search for if an element exists in vector
+* referenced https://stackoverflow.com/a/63712239 to see how to erase element in vector for backward elimination
+* referenced slides 42-49 in project 2 briefing slides
+* 
+* contains the two search algorithms for the program; algorithmInput = 1 -> forward selection | algorithmInput = 2 -> backward elimination
+*/
 void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int instances, double nearestNeighborAccuracy)
 {
     vector<int> finalSetOfFeatures;
@@ -159,17 +150,15 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
     {
         for (int i = 0; i < dataVector.at(0).dataFeatures.size(); i++)
         {
-            //cout << "On the " << i + 1 << "th level of the search tree\n";
             featureToAddAtThisLevel = -1;
             localFeatureToAddAtThisLevel = -1;
             localAccuracy = 0;
             for (int k = 0; k < dataVector.at(0).dataFeatures.size(); k++)
             {
-                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) != currentSetOfFeatures.end())
+                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) != currentSetOfFeatures.end()) // if feature exists in vector, skip
                 {
                     continue;
                 }
-                //cout << "--Considering adding the " << k + 1 << " feature\n";
                 temp = currentSetOfFeatures;
                 temp.push_back(k);
                 accuracy = nearestNeighbor(dataVector, temp, instances);
@@ -187,7 +176,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                     localFeatureToAddAtThisLevel = k;
                 }
             }
-            if (featureToAddAtThisLevel >= 0)
+            if (featureToAddAtThisLevel >= 0) // if accuracy is better than bestSoFarAccuracy, updates final vector of features
             {
                 currentSetOfFeatures.push_back(featureToAddAtThisLevel);
                 finalSetOfFeatures.push_back(featureToAddAtThisLevel);
@@ -195,7 +184,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                 printFeatures(currentSetOfFeatures);
                 cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
             }
-            else
+            else // otherwise don't update final vector of features and continue search
             {
                 cout << "\n(Warning, accuracy has decreased. Continuing search in case of local maxima)";
                 currentSetOfFeatures.push_back(localFeatureToAddAtThisLevel);
@@ -211,12 +200,12 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
     }
     else if (algorithmInput == 2)
     {
-        for (int cnt = 0; cnt < dataVector.at(0).dataFeatures.size(); cnt++)
+        for (int cnt = 0; cnt < dataVector.at(0).dataFeatures.size(); cnt++) // fills both vectors with all features
         {
             currentSetOfFeatures.push_back(cnt);
             finalSetOfFeatures.push_back(cnt);
         }
-        bestSoFarAccuracy = nearestNeighborAccuracy;
+        bestSoFarAccuracy = nearestNeighborAccuracy; // all features should have same starting accuracy as last tested subset in forward selection (from project 2 sample report)
         for (int i = 0; i < dataVector.at(0).dataFeatures.size(); i++)
         {
             featureToAddAtThisLevel = -1;
@@ -224,7 +213,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
             localAccuracy = 0;
             for (int k = 0; k < dataVector.at(0).dataFeatures.size(); k++)
             {
-                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) == currentSetOfFeatures.end())
+                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) == currentSetOfFeatures.end()) // if element does not exist in vector, skip
                 {
                     continue;
                 }
@@ -245,7 +234,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                     localFeatureToAddAtThisLevel = k;
                 }
             }
-            if (featureToAddAtThisLevel >= 0)
+            if (featureToAddAtThisLevel >= 0) // if accuracy is better than bestSoFarAccuracy, updates final vector of features
             {
                 currentSetOfFeatures.erase(find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), featureToAddAtThisLevel));
                 finalSetOfFeatures.erase(find(finalSetOfFeatures.begin(), finalSetOfFeatures.end(), featureToAddAtThisLevel));
@@ -253,7 +242,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                 printFeatures(currentSetOfFeatures);
                 cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
             }
-            else
+            else // otherwise don't update final vector of features and continue search
             {
                 cout << "\n(Warning, accuracy has decreased. Continuing search in case of local maxima)";
                 currentSetOfFeatures.erase(find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), localFeatureToAddAtThisLevel));
@@ -268,6 +257,9 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
     }
 }
 
+/*
+* prints out the contents of currentSetOfFeatures with { , } formatting
+*/
 void printFeatures(vector<int> currentSetOfFeatures)
 {
     cout << "{";
