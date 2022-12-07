@@ -16,7 +16,7 @@ struct datasetPoint // struct to store each line of the .txt files
 
 // function prototypes
 double nearestNeighbor(vector<datasetPoint>, vector<int>, int);
-void searchAlgorithm(int, vector<datasetPoint>, int, double);
+void searchAlgorithm(int, vector<datasetPoint>, int, double, double);
 double calculateDistance(datasetPoint, datasetPoint, vector<int>);
 void printFeatures(vector<int>);
 //
@@ -64,17 +64,38 @@ int main()
         dataVector.push_back(dataInEachLine);
         dataInEachLine.dataFeatures.clear();
     }
+    instances = dataVector.size();
+    double defaultRate = 0; // default rate = size(most common class) / size (dataset); from 7__MachineLearning002.pptx slides
+    double one = 0, two = 0;
+    for (int cnt = 0; cnt < instances; cnt++)
+    {
+        if (dataVector.at(cnt).dataClass == 1)
+        {
+            one++;
+        }
+        else
+        {
+            two++;
+        }
+    }
+    if (one > two)
+    {
+        defaultRate = one / dataVector.size() * 100;
+    }
+    else
+    {
+        defaultRate = two / dataVector.size() * 100;
+    }
     vector<int> currentSetOfFeatures;
     for (int cnt = 0; cnt < column; cnt++)
     {
         currentSetOfFeatures.push_back(cnt);
     }
-    instances = dataVector.size();
     cout << "\nThis dataset has " << column << " features (not including the class attribute), with " << instances << " instances.\n\n";
     double accuracy = nearestNeighbor(dataVector, currentSetOfFeatures, instances);
     cout << "Running nearest neighbor with all " << column << " features, using 'leaving-one-out' evaluation, I get an accuracy of " << accuracy << "%\n\n";
     cout << "Beginning search.\n\n";
-    searchAlgorithm(algorithmInput, dataVector, instances, accuracy);
+    searchAlgorithm(algorithmInput, dataVector, instances, accuracy, defaultRate);
 
     auto current_time = chrono::high_resolution_clock::now();
     cout << "\nProgram has been running for " << chrono::duration_cast<chrono::seconds>(current_time - start_time).count() << " seconds";
@@ -134,7 +155,7 @@ double calculateDistance(datasetPoint line, datasetPoint line2, vector<int> curr
 * 
 * contains the two search algorithms for the program; algorithmInput = 1 -> forward selection | algorithmInput = 2 -> backward elimination
 */
-void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int instances, double nearestNeighborAccuracy)
+void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int instances, double nearestNeighborAccuracy, double defaultRate)
 {
     vector<int> finalSetOfFeatures, currentSetOfFeatures, temp;
     double bestSoFarAccuracy = 0, accuracy = 0, localAccuracy = 0;
@@ -195,7 +216,7 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                 temp = currentSetOfFeatures; temp.erase(find(temp.begin(), temp.end(), k));
                 if (temp.empty())
                 {
-                    accuracy = 50;
+                    accuracy = defaultRate;
                 }
                 else
                 {
