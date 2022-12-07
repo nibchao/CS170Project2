@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <chrono>
+#include <algorithm>
 
 using namespace std;
 
@@ -15,7 +16,7 @@ struct datasetPoint // struct to store each line of the .txt files
 
 // function prototypes
 double nearestNeighbor(vector<datasetPoint>, vector<int>, int);
-void searchAlgorithm(int, vector<datasetPoint>, int);
+void searchAlgorithm(int, vector<datasetPoint>, int, double);
 double calculateDistance(datasetPoint, datasetPoint, vector<int>);
 void printFeatures(vector<int>);
 //
@@ -88,10 +89,14 @@ int main()
     }
     instances = dataVector.size();
     cout << "\nThis dataset has " << column << " features (not including the class attribute), with " << instances << " instances.\n\n";
-    cout << "Running nearest neighbor with all " << column << " features, using 'leaving-one-out' evaluation, I get an accuracy of " << nearestNeighbor(dataVector, currentSetOfFeatures, instances) << "%\n\n";
+    double accuracy = nearestNeighbor(dataVector, currentSetOfFeatures, instances);
+    cout << "Running nearest neighbor with all " << column << " features, using 'leaving-one-out' evaluation, I get an accuracy of " << accuracy << "%\n\n";
     cout << "Beginning search.\n\n";
-    //searchAlgorithm(1, dataVector, instances);
-    searchAlgorithm(2, dataVector, instances);
+    //searchAlgorithm(algorithmInput, dataVector, instances, accuracy);
+    
+    //searchAlgorithm(1, dataVector, instances, accuracy);
+    searchAlgorithm(2, dataVector, instances, accuracy);
+
     auto current_time = chrono::high_resolution_clock::now();
     cout << "\nProgram has been running for " << chrono::duration_cast<chrono::seconds>(current_time - start_time).count() << " seconds";
     return 0;
@@ -140,72 +145,33 @@ double calculateDistance(datasetPoint line, datasetPoint line2, vector<int> curr
     return pow(distance, 0.5);
 }
 
-void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int instances)
+void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int instances, double nearestNeighborAccuracy)
 {
+    vector<int> finalSetOfFeatures;
     vector<int> currentSetOfFeatures;
-    double bestSoFarAccuracy = 0.01;
+    double bestSoFarAccuracy = 0;
     double accuracy = 0;
     int featureToAddAtThisLevel = 0;
-    double previousBestAccuracy = 0;
+    int localFeatureToAddAtThisLevel = 0;
+    double localAccuracy = 0;
+    vector<int> temp;
     if (algorithmInput == 1) // do forward selection
     {
-        while (previousBestAccuracy < bestSoFarAccuracy)
+        for (int i = 0; i < dataVector.at(0).dataFeatures.size(); i++)
         {
-            previousBestAccuracy = bestSoFarAccuracy;
-            for (int i = 0; i < dataVector.at(0).dataFeatures.size(); i++)
+            //cout << "On the " << i + 1 << "th level of the search tree\n";
+            featureToAddAtThisLevel = -1;
+            localFeatureToAddAtThisLevel = -1;
+            localAccuracy = 0;
+            for (int k = 0; k < dataVector.at(0).dataFeatures.size(); k++)
             {
-                bool stop = false;
-                //cout << "On the " << i + 1 << "th level of the search tree\n";
-                for (int k = 0; k < currentSetOfFeatures.size(); k++)
+                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) != currentSetOfFeatures.end())
                 {
-                    if (currentSetOfFeatures.at(k) == i)
-                    {
-                        stop = true;
-                    }
+                    continue;
                 }
-                if (!stop)
-                {
-                    //cout << "--Considering adding the " << k + 1 << " feature\n";
-                    currentSetOfFeatures.push_back(i);
-                    accuracy = nearestNeighbor(dataVector, currentSetOfFeatures, instances);
-                    cout << "Using feature(s) ";
-                    printFeatures(currentSetOfFeatures);
-                    cout << "accuracy is " << accuracy << "%\n";
-                    if (accuracy > bestSoFarAccuracy)
-                    {
-                        bestSoFarAccuracy = accuracy;
-                        featureToAddAtThisLevel = i;
-                    }
-                    currentSetOfFeatures.pop_back();
-                }
-            }
-            if (previousBestAccuracy == bestSoFarAccuracy)
-            {
-                break;
-            }
-            currentSetOfFeatures.push_back(featureToAddAtThisLevel);
-            cout << "\nFeature set ";
-            printFeatures(currentSetOfFeatures);
-            cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
-        }
-        cout << "\nFinished search. The best feature subset is ";
-        printFeatures(currentSetOfFeatures);
-		cout << "which has an accuracy of " << bestSoFarAccuracy << "%\n";
-    }
-    else if (algorithmInput == 2)
-    {
-        vector<int> temp;
-        for (int cnt = 0; cnt < dataVector.at(0).dataFeatures.size(); cnt++)
-        {
-            currentSetOfFeatures.push_back(cnt);
-        }
-        while (previousBestAccuracy < bestSoFarAccuracy)
-        {
-            previousBestAccuracy = bestSoFarAccuracy;
-            for (int i = 0; i < currentSetOfFeatures.size(); i++)
-            {
+                //cout << "--Considering adding the " << k + 1 << " feature\n";
                 temp = currentSetOfFeatures;
-                temp.erase(temp.begin() + i);
+                temp.push_back(k);
                 accuracy = nearestNeighbor(dataVector, temp, instances);
                 cout << "Using feature(s) ";
                 printFeatures(temp);
@@ -213,20 +179,91 @@ void searchAlgorithm(int algorithmInput, vector<datasetPoint> dataVector, int in
                 if (accuracy > bestSoFarAccuracy)
                 {
                     bestSoFarAccuracy = accuracy;
-                    featureToAddAtThisLevel = i;
+                    featureToAddAtThisLevel = k;
+                }
+                if (accuracy > localAccuracy)
+                {
+                    localAccuracy = accuracy;
+                    localFeatureToAddAtThisLevel = k;
                 }
             }
-            if (previousBestAccuracy == bestSoFarAccuracy)
+            if (featureToAddAtThisLevel >= 0)
             {
-                break;
+                currentSetOfFeatures.push_back(featureToAddAtThisLevel);
+                finalSetOfFeatures.push_back(featureToAddAtThisLevel);
+                cout << "\nFeature set ";
+                printFeatures(currentSetOfFeatures);
+                cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
             }
-            currentSetOfFeatures.erase(currentSetOfFeatures.begin() + featureToAddAtThisLevel);
-            cout << "\nFeature set ";
-            printFeatures(currentSetOfFeatures);
-            cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
+            else
+            {
+                cout << "\n(Warning, accuracy has decreased. Continuing search in case of local maxima)";
+                currentSetOfFeatures.push_back(localFeatureToAddAtThisLevel);
+                cout << "\nFeature set ";
+                printFeatures(currentSetOfFeatures);
+                cout << "was best, accuracy is " << localAccuracy << "%\n\n";
+            }
+            
         }
-        cout << "\nFinished search. The best feature subset is ";
-        printFeatures(currentSetOfFeatures);
+        cout << "Finished search. The best feature subset is ";
+        printFeatures(finalSetOfFeatures);
+        cout << "which has an accuracy of " << bestSoFarAccuracy << "%\n";
+    }
+    else if (algorithmInput == 2)
+    {
+        for (int cnt = 0; cnt < dataVector.at(0).dataFeatures.size(); cnt++)
+        {
+            currentSetOfFeatures.push_back(cnt);
+            finalSetOfFeatures.push_back(cnt);
+        }
+        bestSoFarAccuracy = nearestNeighborAccuracy;
+        for (int i = 0; i < dataVector.at(0).dataFeatures.size(); i++)
+        {
+            featureToAddAtThisLevel = -1;
+            localFeatureToAddAtThisLevel = -1;
+            localAccuracy = 0;
+            for (int k = 0; k < dataVector.at(0).dataFeatures.size(); k++)
+            {
+                if (find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), k) == currentSetOfFeatures.end())
+                {
+                    continue;
+                }
+                temp = currentSetOfFeatures;
+                temp.erase(find(temp.begin(), temp.end(), k));
+                accuracy = nearestNeighbor(dataVector, temp, instances);
+                cout << "Using feature(s) ";
+                printFeatures(temp);
+                cout << "accuracy is " << accuracy << "%\n";
+                if (accuracy > bestSoFarAccuracy)
+                {
+                    bestSoFarAccuracy = accuracy;
+                    featureToAddAtThisLevel = k;
+                }
+                if (accuracy > localAccuracy)
+                {
+                    localAccuracy = accuracy;
+                    localFeatureToAddAtThisLevel = k;
+                }
+            }
+            if (featureToAddAtThisLevel >= 0)
+            {
+                currentSetOfFeatures.erase(find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), featureToAddAtThisLevel));
+                finalSetOfFeatures.erase(find(finalSetOfFeatures.begin(), finalSetOfFeatures.end(), featureToAddAtThisLevel));
+                cout << "\nFeature set ";
+                printFeatures(currentSetOfFeatures);
+                cout << "was best, accuracy is " << bestSoFarAccuracy << "%\n\n";
+            }
+            else
+            {
+                cout << "\n(Warning, accuracy has decreased. Continuing search in case of local maxima)";
+                currentSetOfFeatures.erase(find(currentSetOfFeatures.begin(), currentSetOfFeatures.end(), localFeatureToAddAtThisLevel));
+                cout << "\nFeature set ";
+                printFeatures(currentSetOfFeatures);
+                cout << "was best, accuracy is " << localAccuracy << "%\n\n";
+            }
+        }
+        cout << "Finished search. The best feature subset is ";
+        printFeatures(finalSetOfFeatures);
         cout << "which has an accuracy of " << bestSoFarAccuracy << "%\n";
     }
 }
@@ -242,7 +279,8 @@ void printFeatures(vector<int> currentSetOfFeatures)
         }
         else
         {
-            cout << currentSetOfFeatures[cnt] + 1 << "} ";
+            cout << currentSetOfFeatures[cnt] + 1;
         }
     }
+    cout << "} ";
 }
