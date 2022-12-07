@@ -1,0 +1,53 @@
+
+This dataset has 6 features (not including the class attribute), with 500 instances.
+
+Running nearest neighbor with all 6 features, using 'leaving-one-out' evaluation, I get an accuracy of 84%
+
+Beginning search.
+
+Using feature(s) {1} accuracy is 73.6%
+Using feature(s) {2} accuracy is 69.6%
+Using feature(s) {3} accuracy is 84.8%
+Using feature(s) {4} accuracy is 73.2%
+Using feature(s) {5} accuracy is 72.2%
+Using feature(s) {6} accuracy is 70.2%
+
+Feature set {3} was best, accuracy is 84.8%
+
+Using feature(s) {3, 1} accuracy is 81.6%
+Using feature(s) {3, 2} accuracy is 81.8%
+Using feature(s) {3, 4} accuracy is 94.2%
+Using feature(s) {3, 5} accuracy is 82%
+Using feature(s) {3, 6} accuracy is 81.6%
+
+Feature set {3, 4} was best, accuracy is 94.2%
+
+Using feature(s) {3, 4, 1} accuracy is 92.8%
+Using feature(s) {3, 4, 2} accuracy is 91.2%
+Using feature(s) {3, 4, 5} accuracy is 90.6%
+Using feature(s) {3, 4, 6} accuracy is 89.2%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {3, 4, 1} was best, accuracy is 92.8%
+
+Using feature(s) {3, 4, 1, 2} accuracy is 88%
+Using feature(s) {3, 4, 1, 5} accuracy is 90%
+Using feature(s) {3, 4, 1, 6} accuracy is 86.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {3, 4, 1, 5} was best, accuracy is 90%
+
+Using feature(s) {3, 4, 1, 5, 2} accuracy is 86.2%
+Using feature(s) {3, 4, 1, 5, 6} accuracy is 83.2%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {3, 4, 1, 5, 2} was best, accuracy is 86.2%
+
+Using feature(s) {3, 4, 1, 5, 2, 6} accuracy is 84%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {3, 4, 1, 5, 2, 6} was best, accuracy is 84%
+
+Finished search. The best feature subset is {3, 4} which has an accuracy of 94.2%
+
+Program has been running for 11 seconds

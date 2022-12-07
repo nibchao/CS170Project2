@@ -1,0 +1,988 @@
+
+This dataset has 40 features (not including the class attribute), with 1000 instances.
+
+Running nearest neighbor with all 40 features, using 'leaving-one-out' evaluation, I get an accuracy of 67.7%
+
+Beginning search.
+
+Using feature(s) {1} accuracy is 68%
+Using feature(s) {2} accuracy is 67.7%
+Using feature(s) {3} accuracy is 67.4%
+Using feature(s) {4} accuracy is 69.7%
+Using feature(s) {5} accuracy is 69.7%
+Using feature(s) {6} accuracy is 70.2%
+Using feature(s) {7} accuracy is 69.7%
+Using feature(s) {8} accuracy is 68.2%
+Using feature(s) {9} accuracy is 69%
+Using feature(s) {10} accuracy is 69.3%
+Using feature(s) {11} accuracy is 73.8%
+Using feature(s) {12} accuracy is 69.2%
+Using feature(s) {13} accuracy is 70.6%
+Using feature(s) {14} accuracy is 67.1%
+Using feature(s) {15} accuracy is 69.7%
+Using feature(s) {16} accuracy is 66.3%
+Using feature(s) {17} accuracy is 68.8%
+Using feature(s) {18} accuracy is 69.9%
+Using feature(s) {19} accuracy is 68%
+Using feature(s) {20} accuracy is 68.8%
+Using feature(s) {21} accuracy is 68.7%
+Using feature(s) {22} accuracy is 69.9%
+Using feature(s) {23} accuracy is 69.5%
+Using feature(s) {24} accuracy is 70.1%
+Using feature(s) {25} accuracy is 68.2%
+Using feature(s) {26} accuracy is 70%
+Using feature(s) {27} accuracy is 68.7%
+Using feature(s) {28} accuracy is 69.3%
+Using feature(s) {29} accuracy is 69.9%
+Using feature(s) {30} accuracy is 69.5%
+Using feature(s) {31} accuracy is 70%
+Using feature(s) {32} accuracy is 70.5%
+Using feature(s) {33} accuracy is 70.5%
+Using feature(s) {34} accuracy is 70.1%
+Using feature(s) {35} accuracy is 68.3%
+Using feature(s) {36} accuracy is 71.2%
+Using feature(s) {37} accuracy is 71.6%
+Using feature(s) {38} accuracy is 71.6%
+Using feature(s) {39} accuracy is 85.4%
+Using feature(s) {40} accuracy is 69.6%
+
+Feature set {39} was best, accuracy is 85.4%
+
+Using feature(s) {39, 1} accuracy is 84.4%
+Using feature(s) {39, 2} accuracy is 83.9%
+Using feature(s) {39, 3} accuracy is 82.7%
+Using feature(s) {39, 4} accuracy is 83.6%
+Using feature(s) {39, 5} accuracy is 83.3%
+Using feature(s) {39, 6} accuracy is 83.5%
+Using feature(s) {39, 7} accuracy is 85.1%
+Using feature(s) {39, 8} accuracy is 84.8%
+Using feature(s) {39, 9} accuracy is 84.4%
+Using feature(s) {39, 10} accuracy is 84.1%
+Using feature(s) {39, 11} accuracy is 95.3%
+Using feature(s) {39, 12} accuracy is 83.6%
+Using feature(s) {39, 13} accuracy is 83.5%
+Using feature(s) {39, 14} accuracy is 84.5%
+Using feature(s) {39, 15} accuracy is 82.9%
+Using feature(s) {39, 16} accuracy is 81.6%
+Using feature(s) {39, 17} accuracy is 85.6%
+Using feature(s) {39, 18} accuracy is 84.3%
+Using feature(s) {39, 19} accuracy is 83%
+Using feature(s) {39, 20} accuracy is 83.5%
+Using feature(s) {39, 21} accuracy is 85.8%
+Using feature(s) {39, 22} accuracy is 84.1%
+Using feature(s) {39, 23} accuracy is 82.9%
+Using feature(s) {39, 24} accuracy is 83.7%
+Using feature(s) {39, 25} accuracy is 83.3%
+Using feature(s) {39, 26} accuracy is 84.8%
+Using feature(s) {39, 27} accuracy is 82.4%
+Using feature(s) {39, 28} accuracy is 83.1%
+Using feature(s) {39, 29} accuracy is 83.3%
+Using feature(s) {39, 30} accuracy is 82.9%
+Using feature(s) {39, 31} accuracy is 84.5%
+Using feature(s) {39, 32} accuracy is 82.8%
+Using feature(s) {39, 33} accuracy is 84.5%
+Using feature(s) {39, 34} accuracy is 82.9%
+Using feature(s) {39, 35} accuracy is 84.3%
+Using feature(s) {39, 36} accuracy is 82.8%
+Using feature(s) {39, 37} accuracy is 83%
+Using feature(s) {39, 38} accuracy is 83.7%
+Using feature(s) {39, 40} accuracy is 82.8%
+
+Feature set {39, 11} was best, accuracy is 95.3%
+
+Using feature(s) {39, 11, 1} accuracy is 91.5%
+Using feature(s) {39, 11, 2} accuracy is 91.1%
+Using feature(s) {39, 11, 3} accuracy is 90.9%
+Using feature(s) {39, 11, 4} accuracy is 91.5%
+Using feature(s) {39, 11, 5} accuracy is 91.7%
+Using feature(s) {39, 11, 6} accuracy is 91.3%
+Using feature(s) {39, 11, 7} accuracy is 91.4%
+Using feature(s) {39, 11, 8} accuracy is 90.7%
+Using feature(s) {39, 11, 9} accuracy is 91.4%
+Using feature(s) {39, 11, 10} accuracy is 92.3%
+Using feature(s) {39, 11, 12} accuracy is 91.1%
+Using feature(s) {39, 11, 13} accuracy is 91.3%
+Using feature(s) {39, 11, 14} accuracy is 91.1%
+Using feature(s) {39, 11, 15} accuracy is 89.7%
+Using feature(s) {39, 11, 16} accuracy is 92%
+Using feature(s) {39, 11, 17} accuracy is 91.4%
+Using feature(s) {39, 11, 18} accuracy is 91.7%
+Using feature(s) {39, 11, 19} accuracy is 90.6%
+Using feature(s) {39, 11, 20} accuracy is 91.6%
+Using feature(s) {39, 11, 21} accuracy is 92.6%
+Using feature(s) {39, 11, 22} accuracy is 91.2%
+Using feature(s) {39, 11, 23} accuracy is 89.4%
+Using feature(s) {39, 11, 24} accuracy is 90.8%
+Using feature(s) {39, 11, 25} accuracy is 91.7%
+Using feature(s) {39, 11, 26} accuracy is 91.2%
+Using feature(s) {39, 11, 27} accuracy is 90.7%
+Using feature(s) {39, 11, 28} accuracy is 91.3%
+Using feature(s) {39, 11, 29} accuracy is 91.8%
+Using feature(s) {39, 11, 30} accuracy is 90.2%
+Using feature(s) {39, 11, 31} accuracy is 91.3%
+Using feature(s) {39, 11, 32} accuracy is 90.7%
+Using feature(s) {39, 11, 33} accuracy is 92.2%
+Using feature(s) {39, 11, 34} accuracy is 91.8%
+Using feature(s) {39, 11, 35} accuracy is 91.5%
+Using feature(s) {39, 11, 36} accuracy is 91.6%
+Using feature(s) {39, 11, 37} accuracy is 91.5%
+Using feature(s) {39, 11, 38} accuracy is 91.6%
+Using feature(s) {39, 11, 40} accuracy is 90.7%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21} was best, accuracy is 92.6%
+
+Using feature(s) {39, 11, 21, 1} accuracy is 88.4%
+Using feature(s) {39, 11, 21, 2} accuracy is 89%
+Using feature(s) {39, 11, 21, 3} accuracy is 88.4%
+Using feature(s) {39, 11, 21, 4} accuracy is 88.4%
+Using feature(s) {39, 11, 21, 5} accuracy is 89.8%
+Using feature(s) {39, 11, 21, 6} accuracy is 89.3%
+Using feature(s) {39, 11, 21, 7} accuracy is 89.7%
+Using feature(s) {39, 11, 21, 8} accuracy is 88%
+Using feature(s) {39, 11, 21, 9} accuracy is 89.6%
+Using feature(s) {39, 11, 21, 10} accuracy is 87.9%
+Using feature(s) {39, 11, 21, 12} accuracy is 88.6%
+Using feature(s) {39, 11, 21, 13} accuracy is 88.9%
+Using feature(s) {39, 11, 21, 14} accuracy is 89.6%
+Using feature(s) {39, 11, 21, 15} accuracy is 88.5%
+Using feature(s) {39, 11, 21, 16} accuracy is 87.9%
+Using feature(s) {39, 11, 21, 17} accuracy is 89.2%
+Using feature(s) {39, 11, 21, 18} accuracy is 87.7%
+Using feature(s) {39, 11, 21, 19} accuracy is 89.2%
+Using feature(s) {39, 11, 21, 20} accuracy is 89.4%
+Using feature(s) {39, 11, 21, 22} accuracy is 89.4%
+Using feature(s) {39, 11, 21, 23} accuracy is 87.3%
+Using feature(s) {39, 11, 21, 24} accuracy is 87.5%
+Using feature(s) {39, 11, 21, 25} accuracy is 87.9%
+Using feature(s) {39, 11, 21, 26} accuracy is 88.9%
+Using feature(s) {39, 11, 21, 27} accuracy is 89.8%
+Using feature(s) {39, 11, 21, 28} accuracy is 89.4%
+Using feature(s) {39, 11, 21, 29} accuracy is 89.2%
+Using feature(s) {39, 11, 21, 30} accuracy is 89.3%
+Using feature(s) {39, 11, 21, 31} accuracy is 87.8%
+Using feature(s) {39, 11, 21, 32} accuracy is 88.9%
+Using feature(s) {39, 11, 21, 33} accuracy is 89.1%
+Using feature(s) {39, 11, 21, 34} accuracy is 88.3%
+Using feature(s) {39, 11, 21, 35} accuracy is 89.1%
+Using feature(s) {39, 11, 21, 36} accuracy is 88.8%
+Using feature(s) {39, 11, 21, 37} accuracy is 90.4%
+Using feature(s) {39, 11, 21, 38} accuracy is 88.5%
+Using feature(s) {39, 11, 21, 40} accuracy is 88.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37} was best, accuracy is 90.4%
+
+Using feature(s) {39, 11, 21, 37, 1} accuracy is 84.3%
+Using feature(s) {39, 11, 21, 37, 2} accuracy is 84.8%
+Using feature(s) {39, 11, 21, 37, 3} accuracy is 84.9%
+Using feature(s) {39, 11, 21, 37, 4} accuracy is 82.8%
+Using feature(s) {39, 11, 21, 37, 5} accuracy is 85.8%
+Using feature(s) {39, 11, 21, 37, 6} accuracy is 84.3%
+Using feature(s) {39, 11, 21, 37, 7} accuracy is 86%
+Using feature(s) {39, 11, 21, 37, 8} accuracy is 84%
+Using feature(s) {39, 11, 21, 37, 9} accuracy is 84.5%
+Using feature(s) {39, 11, 21, 37, 10} accuracy is 83.3%
+Using feature(s) {39, 11, 21, 37, 12} accuracy is 83.6%
+Using feature(s) {39, 11, 21, 37, 13} accuracy is 83.4%
+Using feature(s) {39, 11, 21, 37, 14} accuracy is 84%
+Using feature(s) {39, 11, 21, 37, 15} accuracy is 84.2%
+Using feature(s) {39, 11, 21, 37, 16} accuracy is 83.6%
+Using feature(s) {39, 11, 21, 37, 17} accuracy is 84.8%
+Using feature(s) {39, 11, 21, 37, 18} accuracy is 85.1%
+Using feature(s) {39, 11, 21, 37, 19} accuracy is 84.9%
+Using feature(s) {39, 11, 21, 37, 20} accuracy is 84.2%
+Using feature(s) {39, 11, 21, 37, 22} accuracy is 84.3%
+Using feature(s) {39, 11, 21, 37, 23} accuracy is 84.3%
+Using feature(s) {39, 11, 21, 37, 24} accuracy is 83.2%
+Using feature(s) {39, 11, 21, 37, 25} accuracy is 83.5%
+Using feature(s) {39, 11, 21, 37, 26} accuracy is 82.8%
+Using feature(s) {39, 11, 21, 37, 27} accuracy is 83.9%
+Using feature(s) {39, 11, 21, 37, 28} accuracy is 83.4%
+Using feature(s) {39, 11, 21, 37, 29} accuracy is 84.1%
+Using feature(s) {39, 11, 21, 37, 30} accuracy is 86.2%
+Using feature(s) {39, 11, 21, 37, 31} accuracy is 83.9%
+Using feature(s) {39, 11, 21, 37, 32} accuracy is 84.1%
+Using feature(s) {39, 11, 21, 37, 33} accuracy is 85.6%
+Using feature(s) {39, 11, 21, 37, 34} accuracy is 83.7%
+Using feature(s) {39, 11, 21, 37, 35} accuracy is 84.1%
+Using feature(s) {39, 11, 21, 37, 36} accuracy is 85.1%
+Using feature(s) {39, 11, 21, 37, 38} accuracy is 84.5%
+Using feature(s) {39, 11, 21, 37, 40} accuracy is 83.6%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30} was best, accuracy is 86.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 1} accuracy is 81.2%
+Using feature(s) {39, 11, 21, 37, 30, 2} accuracy is 82.4%
+Using feature(s) {39, 11, 21, 37, 30, 3} accuracy is 82.1%
+Using feature(s) {39, 11, 21, 37, 30, 4} accuracy is 81.9%
+Using feature(s) {39, 11, 21, 37, 30, 5} accuracy is 81.5%
+Using feature(s) {39, 11, 21, 37, 30, 6} accuracy is 81.1%
+Using feature(s) {39, 11, 21, 37, 30, 7} accuracy is 81.7%
+Using feature(s) {39, 11, 21, 37, 30, 8} accuracy is 81.4%
+Using feature(s) {39, 11, 21, 37, 30, 9} accuracy is 81%
+Using feature(s) {39, 11, 21, 37, 30, 10} accuracy is 81.4%
+Using feature(s) {39, 11, 21, 37, 30, 12} accuracy is 80.1%
+Using feature(s) {39, 11, 21, 37, 30, 13} accuracy is 80%
+Using feature(s) {39, 11, 21, 37, 30, 14} accuracy is 80.9%
+Using feature(s) {39, 11, 21, 37, 30, 15} accuracy is 82%
+Using feature(s) {39, 11, 21, 37, 30, 16} accuracy is 79.2%
+Using feature(s) {39, 11, 21, 37, 30, 17} accuracy is 82%
+Using feature(s) {39, 11, 21, 37, 30, 18} accuracy is 80.6%
+Using feature(s) {39, 11, 21, 37, 30, 19} accuracy is 81.4%
+Using feature(s) {39, 11, 21, 37, 30, 20} accuracy is 80.9%
+Using feature(s) {39, 11, 21, 37, 30, 22} accuracy is 79.9%
+Using feature(s) {39, 11, 21, 37, 30, 23} accuracy is 82.4%
+Using feature(s) {39, 11, 21, 37, 30, 24} accuracy is 80.1%
+Using feature(s) {39, 11, 21, 37, 30, 25} accuracy is 80.8%
+Using feature(s) {39, 11, 21, 37, 30, 26} accuracy is 82.6%
+Using feature(s) {39, 11, 21, 37, 30, 27} accuracy is 81.7%
+Using feature(s) {39, 11, 21, 37, 30, 28} accuracy is 81.5%
+Using feature(s) {39, 11, 21, 37, 30, 29} accuracy is 81.7%
+Using feature(s) {39, 11, 21, 37, 30, 31} accuracy is 81.7%
+Using feature(s) {39, 11, 21, 37, 30, 32} accuracy is 81.1%
+Using feature(s) {39, 11, 21, 37, 30, 33} accuracy is 83.2%
+Using feature(s) {39, 11, 21, 37, 30, 34} accuracy is 81.3%
+Using feature(s) {39, 11, 21, 37, 30, 35} accuracy is 81.9%
+Using feature(s) {39, 11, 21, 37, 30, 36} accuracy is 81.7%
+Using feature(s) {39, 11, 21, 37, 30, 38} accuracy is 84%
+Using feature(s) {39, 11, 21, 37, 30, 40} accuracy is 82.1%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38} was best, accuracy is 84%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 1} accuracy is 79.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 2} accuracy is 78.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3} accuracy is 81.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 4} accuracy is 78.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 5} accuracy is 80.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 6} accuracy is 79.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 7} accuracy is 80.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 8} accuracy is 79.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 9} accuracy is 77.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 10} accuracy is 80.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 12} accuracy is 78.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 13} accuracy is 79.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 14} accuracy is 80%
+Using feature(s) {39, 11, 21, 37, 30, 38, 15} accuracy is 80.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 16} accuracy is 79.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 17} accuracy is 80.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 18} accuracy is 78.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 19} accuracy is 80.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 20} accuracy is 80.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 22} accuracy is 76.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 23} accuracy is 79.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 24} accuracy is 80%
+Using feature(s) {39, 11, 21, 37, 30, 38, 25} accuracy is 78.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 26} accuracy is 79.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 27} accuracy is 79.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 28} accuracy is 79.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 29} accuracy is 79.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 31} accuracy is 80.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 32} accuracy is 80.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 33} accuracy is 79.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 34} accuracy is 80.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 35} accuracy is 79%
+Using feature(s) {39, 11, 21, 37, 30, 38, 36} accuracy is 78.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 40} accuracy is 80.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3} was best, accuracy is 81.3%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 1} accuracy is 76.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 2} accuracy is 76.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 4} accuracy is 78.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 5} accuracy is 77.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 6} accuracy is 76.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 7} accuracy is 77.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 8} accuracy is 77.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 9} accuracy is 76.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10} accuracy is 78.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 12} accuracy is 77.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 13} accuracy is 77%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 14} accuracy is 76.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 15} accuracy is 77.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 16} accuracy is 76.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 17} accuracy is 76.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 18} accuracy is 78%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 19} accuracy is 78.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 20} accuracy is 77.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 22} accuracy is 75.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 23} accuracy is 76.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 24} accuracy is 77.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 25} accuracy is 77.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 26} accuracy is 76.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 27} accuracy is 76.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 28} accuracy is 77.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 29} accuracy is 76.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 31} accuracy is 77.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 32} accuracy is 78.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 33} accuracy is 78.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 34} accuracy is 78.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 35} accuracy is 75.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 36} accuracy is 76.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 40} accuracy is 78%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10} was best, accuracy is 78.9%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 1} accuracy is 76.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 2} accuracy is 77%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 4} accuracy is 75.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 5} accuracy is 76.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 6} accuracy is 77%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 7} accuracy is 75.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 8} accuracy is 75.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 9} accuracy is 76.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 12} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 13} accuracy is 74.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 14} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 15} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 16} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 17} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 18} accuracy is 76.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 19} accuracy is 75%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 20} accuracy is 76.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 22} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 23} accuracy is 76.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 24} accuracy is 75.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 25} accuracy is 77.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 26} accuracy is 76.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27} accuracy is 77.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 28} accuracy is 76.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 29} accuracy is 75.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 31} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 32} accuracy is 76.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 33} accuracy is 76.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 34} accuracy is 76.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 35} accuracy is 75.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 36} accuracy is 75.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 40} accuracy is 75.5%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27} was best, accuracy is 77.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 1} accuracy is 75.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 2} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 4} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 5} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 6} accuracy is 75.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 7} accuracy is 75.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 8} accuracy is 75.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 9} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 12} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 13} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 14} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 15} accuracy is 76.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 16} accuracy is 73.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 17} accuracy is 75.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 18} accuracy is 75.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 19} accuracy is 76.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20} accuracy is 77.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 22} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 23} accuracy is 74.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 24} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 25} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 26} accuracy is 76%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 28} accuracy is 77.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 29} accuracy is 74.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 31} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 32} accuracy is 77.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 33} accuracy is 75.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 34} accuracy is 76.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 35} accuracy is 75.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 36} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 40} accuracy is 75.7%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20} was best, accuracy is 77.1%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 1} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 2} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 4} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 5} accuracy is 73.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6} accuracy is 76.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 7} accuracy is 75%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 8} accuracy is 74.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 9} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 12} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 13} accuracy is 73.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 14} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 15} accuracy is 75.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 16} accuracy is 74.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 17} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 18} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 19} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 22} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 23} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 24} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 25} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 26} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 28} accuracy is 75.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 29} accuracy is 75%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 31} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 32} accuracy is 75.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 33} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 34} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 35} accuracy is 74.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 36} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 40} accuracy is 73%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6} was best, accuracy is 76.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 1} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 2} accuracy is 74.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 4} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 5} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 7} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 8} accuracy is 74.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 9} accuracy is 75.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 12} accuracy is 74.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 13} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14} accuracy is 75.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 15} accuracy is 75.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 16} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 17} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 18} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 19} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 22} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 23} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 24} accuracy is 74.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 25} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 26} accuracy is 74.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 28} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 29} accuracy is 74.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 31} accuracy is 75%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 32} accuracy is 75%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 33} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 34} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 35} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 36} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 40} accuracy is 75.5%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14} was best, accuracy is 75.5%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 1} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 2} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 4} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 5} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 7} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 8} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 9} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 12} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 13} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 15} accuracy is 74.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 16} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 17} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 18} accuracy is 73.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 19} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 22} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 23} accuracy is 74.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 24} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 25} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 26} accuracy is 74.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 28} accuracy is 73.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 29} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 31} accuracy is 75.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 32} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 33} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 34} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 35} accuracy is 73.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 36} accuracy is 73.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40} accuracy is 75.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40} was best, accuracy is 75.4%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 1} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 4} accuracy is 74.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 5} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 7} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 8} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 9} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 12} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 13} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 15} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 16} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 17} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 18} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 19} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 22} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 23} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 24} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 25} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 26} accuracy is 74.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 28} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 29} accuracy is 74.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 31} accuracy is 74.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 32} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 33} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 34} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 35} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 36} accuracy is 72.5%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2} was best, accuracy is 74.7%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 1} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4} accuracy is 74.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 5} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 7} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 8} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 9} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 12} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 13} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 15} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 16} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 17} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 18} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 19} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 22} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 23} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 24} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 25} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 26} accuracy is 73.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 28} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 29} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 31} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 32} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 33} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 34} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 35} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 36} accuracy is 72.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4} was best, accuracy is 74.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 1} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 5} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 7} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 8} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 9} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 12} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 13} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 15} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 16} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 17} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 18} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 19} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 22} accuracy is 70.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 23} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 24} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 25} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 26} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 28} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 29} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 32} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 33} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 34} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 35} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 36} accuracy is 71.1%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31} was best, accuracy is 73.4%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 1} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 5} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 7} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 8} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 9} accuracy is 68.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 12} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 15} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 16} accuracy is 69.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 17} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 18} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 19} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 22} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 23} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 24} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 25} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 26} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 28} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 29} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 32} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 33} accuracy is 70.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 34} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 35} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 36} accuracy is 71.1%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13} was best, accuracy is 72.5%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 1} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 5} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 7} accuracy is 70%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 8} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 9} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 12} accuracy is 69.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 15} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 16} accuracy is 70.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 17} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 18} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 19} accuracy is 70.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 22} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 23} accuracy is 69.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 24} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 25} accuracy is 70%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 28} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 29} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 32} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 33} accuracy is 69.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 34} accuracy is 69.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 35} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 36} accuracy is 70.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26} was best, accuracy is 72.8%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 1} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 7} accuracy is 69.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 8} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 9} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 12} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 15} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 16} accuracy is 70.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 17} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 18} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 19} accuracy is 70.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 22} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 23} accuracy is 70.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 24} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 25} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 28} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 29} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 32} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 33} accuracy is 70.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 34} accuracy is 70.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 35} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 36} accuracy is 71.5%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5} was best, accuracy is 72.6%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 1} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 7} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 8} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 9} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 12} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 15} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 16} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 17} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 18} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 19} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 22} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 23} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 24} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 25} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 28} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 32} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 33} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 34} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 35} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 36} accuracy is 71.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29} was best, accuracy is 72.8%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 1} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 7} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 8} accuracy is 70.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 9} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 12} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 15} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 16} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 17} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 18} accuracy is 70.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 19} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 22} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 23} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 24} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 25} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 32} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 33} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 34} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 35} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 36} accuracy is 71.6%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28} was best, accuracy is 72.8%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 1} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 7} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 8} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 9} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 12} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 15} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 16} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 17} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 18} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 19} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 22} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 23} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 24} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 32} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 33} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 34} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 35} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 36} accuracy is 71.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25} was best, accuracy is 73.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 1} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 7} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 8} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 9} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 12} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 15} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 16} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 17} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 18} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19} accuracy is 74.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 22} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 23} accuracy is 70.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 24} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 32} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 33} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 34} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 35} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 36} accuracy is 73.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19} was best, accuracy is 74.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 1} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 7} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 8} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 9} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 12} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 15} accuracy is 73.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 16} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 17} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 18} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 22} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 23} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 24} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 32} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 33} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 35} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 36} accuracy is 73.8%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34} was best, accuracy is 74%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 1} accuracy is 72.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 7} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 8} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 9} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 12} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 15} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 16} accuracy is 73%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 17} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 18} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 23} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 24} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 32} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 33} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 35} accuracy is 71%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 36} accuracy is 73%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22} was best, accuracy is 73.3%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 1} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 7} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 8} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 9} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 12} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 15} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 17} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 18} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 23} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 24} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 32} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 33} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 35} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 36} accuracy is 72.1%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16} was best, accuracy is 73.9%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 1} accuracy is 73.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 7} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 8} accuracy is 72.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 9} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12} accuracy is 75.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 15} accuracy is 73.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 17} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 18} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 23} accuracy is 73.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 24} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 32} accuracy is 74%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 33} accuracy is 74.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 35} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 36} accuracy is 74.2%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12} was best, accuracy is 75.1%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1} accuracy is 74.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 7} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 8} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 9} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 15} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 17} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 18} accuracy is 73.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 23} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 24} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 32} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 33} accuracy is 73.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 35} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 36} accuracy is 73.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1} was best, accuracy is 74.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 7} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 8} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 9} accuracy is 73.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 15} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 17} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 18} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 23} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 24} accuracy is 72.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 32} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 33} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 35} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36} accuracy is 73.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36} was best, accuracy is 73.4%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 7} accuracy is 73.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 8} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 9} accuracy is 72.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 15} accuracy is 72.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 17} accuracy is 71.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 18} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 23} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 24} accuracy is 72.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32} accuracy is 73.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 33} accuracy is 72%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 35} accuracy is 73%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32} was best, accuracy is 73.2%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 7} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 8} accuracy is 71.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 15} accuracy is 71.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 17} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 18} accuracy is 71.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 23} accuracy is 71.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 24} accuracy is 72.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 33} accuracy is 69.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 35} accuracy is 71.9%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9} was best, accuracy is 72.3%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 7} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 8} accuracy is 70.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 15} accuracy is 72.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 17} accuracy is 70.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 18} accuracy is 70.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 23} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 24} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 33} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35} accuracy is 72.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35} was best, accuracy is 72.3%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 7} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 8} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15} accuracy is 72.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 17} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 18} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 23} accuracy is 71.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 24} accuracy is 70.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 33} accuracy is 71.9%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15} was best, accuracy is 72.6%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 7} accuracy is 70.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 8} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 18} accuracy is 71.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 23} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 24} accuracy is 70.8%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 33} accuracy is 71.7%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17} was best, accuracy is 71.7%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 7} accuracy is 70.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 8} accuracy is 69.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18} accuracy is 71.4%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 23} accuracy is 71.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 24} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 33} accuracy is 70.7%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18} was best, accuracy is 71.4%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 7} accuracy is 70.3%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 8} accuracy is 69.7%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23} accuracy is 70.5%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 24} accuracy is 70.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 33} accuracy is 70.4%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23} was best, accuracy is 70.5%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 7} accuracy is 69.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 8} accuracy is 69.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24} accuracy is 70.1%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 33} accuracy is 69.3%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24} was best, accuracy is 70.1%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 7} accuracy is 68.6%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 8} accuracy is 69.2%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33} accuracy is 69.5%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33} was best, accuracy is 69.5%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33, 7} accuracy is 67.9%
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33, 8} accuracy is 68.8%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33, 8} was best, accuracy is 68.8%
+
+Using feature(s) {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33, 8, 7} accuracy is 67.7%
+
+(Warning, accuracy has decreased. Continuing search in case of local maxima)
+Feature set {39, 11, 21, 37, 30, 38, 3, 10, 27, 20, 6, 14, 40, 2, 4, 31, 13, 26, 5, 29, 28, 25, 19, 34, 22, 16, 12, 1, 36, 32, 9, 35, 15, 17, 18, 23, 24, 33, 8, 7} was best, accuracy is 67.7%
+
+Finished search. The best feature subset is {39, 11} which has an accuracy of 95.3%
+
+Program has been running for 2228 seconds
